@@ -27,6 +27,8 @@ h1{font-size:clamp(30px,5vw,46px);text-transform:uppercase}h2{font-size:34px;tex
 .ad.pend .estado{background:var(--warn-s);color:var(--warn)}
 .cuerpo{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:20px;padding:16px}
 .media{min-width:0}.media img{display:block;width:100%;height:auto;border-radius:8px}
+.media video.vid{display:block;width:100%;max-width:360px;height:auto;border-radius:10px;background:#000}
+.ad.nuevo{border:2px solid #C9A34E}.ad.nuevo .num{background:#C9A34E;color:#111;font-size:12px;width:auto;padding:0 8px}
 .media img.v{max-width:240px}
 .falta{margin-top:8px;font-size:14px;color:var(--warn)}
 .carr{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
@@ -105,7 +107,27 @@ footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid va
     <div><b>Presupuesto</b><span class="big">USD 17 al día</span><small>54 días · unos USD 920 en total · según el plan de la campaña</small></div>
     <div><b>Referencia</b><small class="hist">Clínicas anteriores en Atlanta: USD 4,7 por registro en 2024-25 (170 registros) y USD 10,0 en 2025-26 (102 registros). Récord de clínica: 120 niños.</small></div>
   </div>
-  <article class="ad" data-id="ATL_1">
+<article class="ad nuevo" data-id="ATL_7">
+  <header><span class="num">NEW</span><h3>VIDEO WHAT MAKES US DIFFERENT? (Video)</h3><span class="idi">Inglés</span><span class="estado" data-estado>Lista</span></header>
+  <div class="cuerpo">
+    <div class="media"><video class="vid" controls playsinline preload="metadata" poster="assets/ATL_7_portada.jpg" src="assets/ATL_7.mp4"></video>
+      <p class="hint" style="margin:8px 0 0">26 s · portada en el primer cuadro · fotos reales de Atlanta e Italia</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal <span class="hint">· se puede editar (el mismo del video de Jesús de Atlanta)</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Atlanta, are you ready? 🤍🖤<br><br>Juventus is organizing its first ID Camp in Atlanta, December 19–20. It’s your player’s chance to show their skills, train with Juventus Academy coaches and get an opportunity to be scouted by them.<br><br>📅 December 19–20 · 9:00 AM – 1:00 PM<br>📍 Rush Union Soccer Complex, Alpharetta, GA<br>⚽ Boys and girls, ages 6–16<br><br>We can’t wait to see you on the field. Register at the link below 👇<br>Fino alla fine, forza Juve! ⚪⚫</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Atlanta, are you ready? · Dec 19–20</div>
+      <div class="lbl">Botón</div><p class="btn">Sign Up</p>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article>  <article class="ad" data-id="ATL_1">
   <header><span class="num">1</span><h3>HERO-POSTER (Imagen)</h3><span class="idi">Inglés</span><span class="estado" data-estado>Lista</span></header>
   <div class="cuerpo">
     <div class="media"><img src="assets/ATL_1.jpg" alt="HERO-POSTER (Imagen) · Atlanta"></div>
